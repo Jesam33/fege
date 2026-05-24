@@ -99,7 +99,7 @@ export default function Home() {
                 
                 {/* Block 2 */}
                 <div className="w-full h-32 md:h-48 rounded-xl bg-neutral-900/40 border border-white/5 overflow-hidden relative group backdrop-blur-sm transition-all duration-500 hover:border-primary/50 hover:shadow-[0_0_30px_rgba(217,4,41,0.15)] flex flex-col justify-end p-6 cursor-pointer">
-                  <Image src="/images/img_2.png" alt="FEGE Lookbook 02" fill sizes="(max-width: 1024px) 50vw, 33vw" className="object-cover transition-transform duration-750 group-hover:scale-105 z-0" />
+                  <Image src="/images/Skimask.png" alt="FEGE Lookbook 02" fill sizes="(max-width: 1024px) 50vw, 33vw" className="object-cover transition-transform duration-750 group-hover:scale-105 z-0" />
                   <div className="absolute top-4 left-4 font-mono text-[9px] text-white/40 tracking-widest uppercase z-10">
                     [02 // SOUND]
                   </div>
@@ -116,7 +116,7 @@ export default function Home() {
               <div className="flex flex-col gap-4 pt-8 md:pt-12">
                 {/* Block 3 */}
                 <div className="w-full h-40 md:h-56 rounded-xl bg-neutral-900/40 border border-white/5 overflow-hidden relative group backdrop-blur-sm transition-all duration-500 hover:border-primary/50 hover:shadow-[0_0_30px_rgba(217,4,41,0.15)] flex flex-col justify-end p-6 cursor-pointer">
-                  <Image src="/images/img_3.png" alt="FEGE Lookbook 03" fill sizes="(max-width: 1024px) 50vw, 33vw" className="object-cover transition-transform duration-750 group-hover:scale-105 z-0" />
+                  <Image src="/images/hero_man.png" alt="FEGE Lookbook 03" fill sizes="(max-width: 1024px) 50vw, 33vw" className="object-cover transition-transform duration-750 group-hover:scale-105 z-0" />
                   <div className="absolute top-4 left-4 font-mono text-[9px] text-white/40 tracking-widest uppercase z-10">
                     [03 // ACTION]
                   </div>
@@ -130,7 +130,7 @@ export default function Home() {
                 
                 {/* Block 4 */}
                 <div className="w-full h-48 md:h-64 rounded-xl bg-neutral-900/40 border border-white/5 overflow-hidden relative group backdrop-blur-sm transition-all duration-500 hover:border-primary/50 hover:shadow-[0_0_30px_rgba(217,4,41,0.15)] flex flex-col justify-end p-6 cursor-pointer">
-                  <Image src="/images/girls_top.png" alt="FEGE Lookbook 04" fill sizes="(max-width: 1024px) 50vw, 33vw" className="object-cover transition-transform duration-750 group-hover:scale-105 z-0" />
+                  <Image src="/images/round_neck.png" alt="FEGE Lookbook 04" fill sizes="(max-width: 1024px) 50vw, 33vw" className="object-cover transition-transform duration-750 group-hover:scale-105 z-0" />
                   <div className="absolute top-4 left-4 font-mono text-[9px] text-white/40 tracking-widest uppercase z-10">
                     [04 // PRESENCE]
                   </div>
@@ -147,7 +147,7 @@ export default function Home() {
               <div className="hidden lg:flex flex-col gap-4 pt-4">
                 {/* Block 5 */}
                 <div className="w-full h-56 rounded-xl bg-neutral-900/40 border border-white/5 overflow-hidden relative group backdrop-blur-sm transition-all duration-500 hover:border-primary/50 hover:shadow-[0_0_30px_rgba(217,4,41,0.15)] flex flex-col justify-end p-6 cursor-pointer">
-                  <Image src="/images/img_5.png" alt="FEGE Lookbook 05" fill sizes="(max-width: 1024px) 50vw, 33vw" className="object-cover transition-transform duration-750 group-hover:scale-105 z-0" />
+                  <Image src="/images/cotton_shirt.png" alt="FEGE Lookbook 05" fill sizes="(max-width: 1024px) 50vw, 33vw" className="object-cover transition-transform duration-750 group-hover:scale-105 z-0" />
                   <div className="absolute top-4 left-4 font-mono text-[9px] text-white/40 tracking-widest uppercase z-10">
                     [05 // BRAND]
                   </div>

@@ -24,9 +24,9 @@ export default function CartDrawer() {
   const handleWhatsAppCheckout = () => {
     const phoneNumber = "2348146969660"; // replace with real number
     const itemLines = cart
-      .map((item) => `• ${item.name} x${item.quantity} — $${(item.price * item.quantity).toLocaleString()}`)
+      .map((item) => `• ${item.name} x${item.quantity} — ₦${(item.price * item.quantity).toLocaleString()}K`)
       .join("\n");
-    const message = `Hello FEGE, I'm ready to move different.\n\nHere's my order from the originals drop:\n\n${itemLines}\n\n─────────────────\nORDER TOTAL: $${cartTotal.toLocaleString()}\n─────────────────\n\nLet's lock this in. Please let me know how to finalize checkout!`;
+    const message = `Hello FEGE, I'm ready to move different.\n\nHere's my order from the originals drop:\n\n${itemLines}\n\n─────────────────\nORDER TOTAL: ₦${cartTotal.toLocaleString()}K\n─────────────────\n\nLet's lock this in. Please let me know how to finalize checkout!`;
     window.open(`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`, "_blank");
   };
 
@@ -112,7 +112,7 @@ export default function CartDrawer() {
                         <button onClick={() => updateQuantity(item.id, item.quantity + 1)} className="px-2.5 py-1 hover:bg-border transition-colors text-white text-xs font-bold">+</button>
                       </div>
                       {/* Price */}
-                      <span className="font-mono font-bold text-primary text-sm">${(item.price * item.quantity).toLocaleString()}</span>
+                      <span className="font-mono font-bold text-primary text-sm">₦{(item.price * item.quantity).toLocaleString()}K</span>
                     </div>
                   </div>
                 </div>
@@ -124,7 +124,7 @@ export default function CartDrawer() {
               <div className="flex justify-between items-center mb-6">
                 <div>
                   <p className="font-mono text-[10px] text-muted uppercase tracking-widest">ORDER TOTAL</p>
-                  <p className="font-syne font-black text-white text-2xl">${cartTotal.toLocaleString()}</p>
+                  <p className="font-syne font-black text-white text-2xl">₦{cartTotal.toLocaleString()}K</p>
                 </div>
                 <button onClick={clearCart} className="text-[10px] font-mono text-muted/60 hover:text-primary uppercase tracking-widest transition-colors">
                   CLEAR BAG
