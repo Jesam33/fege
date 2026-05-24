@@ -110,7 +110,7 @@ export default function SearchDropdown({ isOpen, onClose }: SearchDropdownProps)
             >
               <div className="relative w-10 h-12 shrink-0 rounded bg-neutral-900 overflow-hidden">
                 {product.imageUrl ? (
-                  <Image src={product.imageUrl} alt={product.name} fill className="object-cover" />
+                  <Image src={product.imageUrl} alt={product.name} fill sizes="40px" className="object-cover" />
                 ) : (
                   <div className="absolute inset-0 flex items-center justify-center">
                     <span className="font-mono text-[6px] text-neutral-600 uppercase">FG</span>

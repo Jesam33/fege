@@ -84,7 +84,7 @@ export default function CartDrawer() {
                   {/* Image */}
                   <div className="relative w-20 h-24 shrink-0 bg-neutral-900 overflow-hidden rounded-lg">
                     {item.imageUrl ? (
-                      <Image src={item.imageUrl} alt={item.name} fill className="object-cover" />
+                      <Image src={item.imageUrl} alt={item.name} fill sizes="80px" className="object-cover" />
                     ) : (
                       <div className="absolute inset-0 flex items-center justify-center">
                         <span className="font-mono text-[8px] text-neutral-600 tracking-widest text-center uppercase">FG DROP</span>

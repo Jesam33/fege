@@ -49,6 +49,7 @@ export default function GalleryPage() {
                 src={item.src} 
                 alt={item.tag} 
                 fill 
+                sizes="(max-width: 1024px) 100vw, (max-width: 1280px) 50vw, 33vw"
                 className="object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-105"
               />
 
