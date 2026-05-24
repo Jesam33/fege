@@ -25,6 +25,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "FEGE | Premium Streetwear",
   description: "Exclusive clothing brand featuring sleek, premium streetwear and apparel inspired by Port Harcourt street culture.",
+  icons: [
+    { rel: "icon", url: "/images/FEGE-BOLD-RED.jpeg", type: "image/jpeg" },
+  ],
 };
 
 export default function RootLayout({
