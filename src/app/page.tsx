@@ -39,13 +39,15 @@ export default function Home() {
             <span className="font-mono text-xs text-primary uppercase tracking-[0.3em] bg-primary/10 border border-primary/20 px-3.5 py-1.5 rounded-full inline-block w-max mb-6">
               V.01 DROP // ORIGINALS
             </span>
+
+            <h2 className="text-3xl sm:text-4xl font-extrabold text-white/80 font-syne tracking-[0.15em] uppercase">
+              SHOP WITH
+            </h2>
             
             <h1 className="text-6xl sm:text-8xl lg:text-[10rem] font-black tracking-tighter text-primary font-syne leading-none uppercase">
               FEGE
             </h1>
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-white font-syne mb-6 tracking-[0.15em] uppercase">
-              JUST DEY
-            </h2>
+            
             
             <p className="text-muted max-w-md text-sm lg:text-base mb-8 leading-relaxed font-sans tracking-wide">
               FEGE isn&apos;t just a word. It&apos;s a feeling. Inspired by the rhythm of Port Harcourt street culture and elevated with luxury streetwear aesthetics.

@@ -69,7 +69,7 @@ export default function ProductCard({ id, name, price, imageUrl, isSoldOut = fal
       <div className="p-6 flex flex-col gap-4">
         <div className="flex justify-between items-start gap-4">
           <h3 className="text-lg font-bold tracking-tight text-white uppercase font-sans group-hover:text-primary transition-colors">{name}</h3>
-          <span className="text-base font-bold text-primary font-mono shrink-0">${price}</span>
+          <span className="text-base font-bold text-primary font-mono shrink-0">₦{price}K</span>
         </div>
         
         {!isSoldOut ? (
