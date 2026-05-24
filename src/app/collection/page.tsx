@@ -8,7 +8,7 @@ export const metadata = {
 export default function CollectionPage() {
   const collectionProducts = [
     { id: "c1", name: "FEGE Premium Sweatshirt", price: 20, imageUrl: "/images/sweatshirt.png" },
-    { id: "c2", name: "“FEGE JUST DEY” Tee", price: 40, imageUrl: "/images/round_neck.png" },
+    { id: "c2", name: "“FEGE JUST DEY” Tee", price: 45, imageUrl: "/images/round_neck.png" },
     { id: "c3", name: "PH Rhythm Windbreaker", price: 130, imageUrl: "", isSoldOut: true },
     { id: "c4", name: "Onyx Calm Confidence Cargo", price: 110, imageUrl: "", isSoldOut: true },
     { id: "c5", name: "Phantom Technical Zip-Up", price: 95, imageUrl: "", isSoldOut: true },
