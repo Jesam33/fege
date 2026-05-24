@@ -15,7 +15,9 @@ export default function GalleryPage() {
     { id: 5, src: "/images/img_5.png", colSpan: "col-span-1 lg:col-span-1", height: "h-[450px]", code: "FG-GB-05", tag: "WEARABLE CULTURE", coordinates: "CULTURE ARCHIVE" },
     { id: 6, src: "/images/img_6.png", colSpan: "col-span-1 lg:col-span-2", height: "h-[450px]", code: "FG-GB-06", tag: "ENERGY. PRESENCE.", coordinates: "ENERGY V.01" },
     { id: 7, src: "/images/sweatshirt.png", colSpan: "col-span-1 lg:col-span-2", height: "h-[400px]", code: "FG-GB-07", tag: "SIGNATURE TEXTURE", coordinates: "SWEATSHIRT V.01" },
-    { id: 8, src: "/images/hero_man_fege.png", colSpan: "col-span-1 lg:col-span-1", height: "h-[400px]", code: "FG-GB-08", tag: "ATTRACT ATTENTION", coordinates: "ATTRACT V.01" }
+    { id: 8, src: "/images/hero_man_fege.png", colSpan: "col-span-1 lg:col-span-1", height: "h-[400px]", code: "FG-GB-08", tag: "ATTRACT ATTENTION", coordinates: "ATTRACT V.01" },
+    { id: 9, src: "/images/cotton_shirt.png", colSpan: "col-span-1 lg:col-span-1", height: "h-[400px]", code: "FG-GB-09", tag: "STREET CASUAL", coordinates: "COTTON V.01" },
+    { id: 10, src: "/images/two-piece.png", colSpan: "col-span-1 lg:col-span-2", height: "h-[400px]", code: "FG-GB-10", tag: "TWO PIECE ENERGY", coordinates: "SET V.01" }
   ];
 
   return (

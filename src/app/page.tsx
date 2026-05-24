@@ -4,10 +4,12 @@ import ProductCard from "@/components/ProductCard";
 
 export default function Home() {
   const featuredProducts = [
-    { id: "f1", name: "FEGE Premium Sweatshirt", price: 75, imageUrl: "/images/sweatshirt.png" },
+    { id: "f1", name: "FEGE Premium Sweatshirt", price: 20, imageUrl: "/images/sweatshirt.png" },
     { id: "f2", name: "“FEGE JUST DEY” Tee", price: 45, imageUrl: "/images/round_neck.png" },
-    { id: "f3", name: "PH Rhythm Windbreaker", price: 130, imageUrl: "", isSoldOut: true },
-    { id: "f4", name: "Onyx Calm Confidence Cargo", price: 110, imageUrl: "", isSoldOut: true }
+    { id: "f7", name: "FEGE Girls Crop Top", price: 25, imageUrl: "/images/girls_top.png", isSoldOut: true },
+
+    { id: "f5", name: "FEGE Street Casual Cotton Shirt", price: 30, imageUrl: "/images/cotton_shirt.png", isSoldOut: true },
+    { id: "f6", name: "FEGE Street Casual Pants", price: 30, imageUrl: "/images/two-piece.png", isSoldOut: true },
   ];
 
   return (
