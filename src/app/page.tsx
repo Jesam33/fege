@@ -5,11 +5,11 @@ import ProductCard from "@/components/ProductCard";
 export default function Home() {
   const featuredProducts = [
     { id: "f1", name: "FEGE Premium Sweatshirt", price: 20, imageUrl: "/images/sweatshirt.png" },
-    { id: "f2", name: "“FEGE JUST DEY” Tee", price: 45, imageUrl: "/images/round_neck.png" },
-    { id: "f7", name: "FEGE Girls Crop Top", price: 25, imageUrl: "/images/girls_top.png", isSoldOut: true },
+    { id: "f2", name: "“FEGE JUST DEY” Tee", price: 40, imageUrl: "/images/round_neck.png" },
+    { id: "f7", name: "FEGE Girls Crop Top", price: 20, imageUrl: "/images/girls_top.png" },
 
-    { id: "f5", name: "FEGE Street Casual Cotton Shirt", price: 30, imageUrl: "/images/cotton_shirt.png", isSoldOut: true },
-    { id: "f6", name: "FEGE Street Casual Pants", price: 30, imageUrl: "/images/two-piece.png", isSoldOut: true },
+    { id: "f5", name: "FEGE Street Casual Cotton Shirt", price: 45, imageUrl: "/images/cotton_shirt.png" },
+    { id: "f6", name: "FEGE Street Casual Pants", price: 45, imageUrl: "/images/two-piece.png" },
   ];
 
   return (
