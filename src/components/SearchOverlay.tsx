@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 const ALL_PRODUCTS = [
-  { id: "f1", name: "FEGE Premium Sweatshirt", price: 75, imageUrl: "/images/sweatshirt.png", category: "Tops", href: "/collection" },
+  { id: "f1", name: "FEGE Premium Sweatshirt", price: 30, imageUrl: "/images/sweatshirt.png", category: "Tops", href: "/collection" },
   { id: "f2", name: "\u201cFEGE JUST DEY\u201d Tee", price: 45, imageUrl: "/images/round_neck.png", category: "Tops", href: "/collection" },
   { id: "f3", name: "PH Rhythm Windbreaker", price: 130, imageUrl: "", category: "Outerwear", href: "/collection" },
   { id: "f4", name: "Onyx Calm Confidence Cargo", price: 110, imageUrl: "", category: "Bottoms", href: "/collection" },

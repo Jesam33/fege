@@ -5,7 +5,7 @@ import { useCart } from "@/context/CartContext";
 import SearchOverlay from "@/components/SearchOverlay";
 
 const ALL_PRODUCTS = [
-  { id: "f1", name: "FEGE Premium Sweatshirt", price: 75, category: "Tops", href: "/collection" },
+  { id: "f1", name: "FEGE Premium Sweatshirt", price: 30, category: "Tops", href: "/collection" },
   { id: "f2", name: "“FEGE JUST DEY” Tee", price: 45, category: "Tops", href: "/collection" },
   { id: "f3", name: "PH Rhythm Windbreaker", price: 130, category: "Outerwear", href: "/collection" },
   { id: "f4", name: "Onyx Calm Confidence Cargo", price: 110, category: "Bottoms", href: "/collection" },

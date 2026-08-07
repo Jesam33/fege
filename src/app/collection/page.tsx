@@ -7,9 +7,9 @@ export const metadata = {
 
 export default function CollectionPage() {
   const collectionProducts = [
-    { id: "c1", name: "FEGE Premium Sweatshirt", price: 20, imageUrl: "/images/sweatshirt.png" },
-    { id: "c2", name: "“FEGE JUST DEY” Tee", price: 40, imageUrl: "/images/round_neck.png" },
-    { id: "c9", name: "FEGE Street Casual Cotton Shirt", price: 45, imageUrl: "/images/cotton_shirt.png" },
+    { id: "c1", name: "FEGE Premium Sweatshirt", price: 30, imageUrl: "/images/sweatshirt.png" },
+    { id: "c2", name: "“FEGE JUST DEY” Tee", price: 45, imageUrl: "/images/round_neck.png" },
+    { id: "c9", name: "FEGE Street Casual Cotton Shirt", price: 40, imageUrl: "/images/cotton_shirt.png" },
     { id: "c10", name: "FEGE Street Casual Pants", price: 45, imageUrl: "/images/two-piece.png" },
     { id: "c11", name: "FEGE Girls Crop Top", price: 20, imageUrl: "/images/girls_top.png" },
     { id: "c3", name: "FEGE Black Luxury Shirt", price: 40, imageUrl: "/images/fege-black-shirt.jpeg" },
