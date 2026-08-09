@@ -7,6 +7,7 @@ export const metadata = {
 
 export default function CollectionPage() {
   const collectionProducts = [
+    { id: "c12", name: "FEGE Indigenous Camo Track", price: 60, imageUrl: "/images/fege-track-1.jpg" },
     { id: "c1", name: "FEGE Premium Sweatshirt", price: 30, imageUrl: "/images/sweatshirt.png" },
     { id: "c2", name: "“FEGE JUST DEY” Tee", price: 45, imageUrl: "/images/round_neck.png" },
     { id: "c9", name: "FEGE Street Casual Cotton Shirt", price: 40, imageUrl: "/images/cotton_shirt.png" },

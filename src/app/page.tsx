@@ -1,9 +1,11 @@
 import Link from "next/link";
 import Image from "next/image";
 import ProductCard from "@/components/ProductCard";
+import TrackScreen from "@/components/TrackScreen";
 
 export default function Home() {
   const featuredProducts = [
+    { id: "f8", name: "FEGE Indigenous Camo Track", price: 60, imageUrl: "/images/fege-track-1.jpg" },
     { id: "f1", name: "FEGE Premium Sweatshirt", price: 30, imageUrl: "/images/sweatshirt.png" },
     { id: "f2", name: "“FEGE JUST DEY” Tee", price: 45, imageUrl: "/images/round_neck.png" },
     { id: "f7", name: "FEGE Girls Crop Top", price: 20, imageUrl: "/images/girls_top.png" },
@@ -216,6 +218,44 @@ export default function Home() {
         </div>
       </section>
 
+      {/* New Release Drop Banner */}
+      <section className="relative w-full pt-16 md:pt-24 pb-14 md:pb-20 bg-black border-b border-white/5 overflow-hidden z-10">
+        {/* faint camo glow backdrop */}
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-[400px] bg-primary/5 rounded-full blur-[140px] pointer-events-none"></div>
+
+        <div className="container mx-auto px-6 relative z-10">
+          {/* Header */}
+          <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-16">
+            <div>
+              <span className="font-mono text-xs text-primary uppercase tracking-[0.3em] font-bold bg-primary/10 border border-primary/20 px-3.5 py-1.5 rounded-full inline-block w-max mb-6">
+                [ NEW RELEASE // V.02 DROP ]
+              </span>
+              <h2 className="text-4xl sm:text-5xl lg:text-7xl font-black font-syne tracking-tighter uppercase text-white leading-none">
+                FEGE Indigenous<br />
+                <span className="text-primary">Camo Track</span>
+              </h2>
+              <p className="text-muted max-w-xl mt-6 text-sm md:text-base leading-relaxed font-sans tracking-wide">
+                The drop is here. Indigenous camo engineered for the streets — every screen, every frame, running the same wave. This is the blockbuster debut of the track.
+              </p>
+            </div>
+            <div className="flex items-center gap-4">
+              <Link href="/collection" className="btn btn-primary font-mono text-xs tracking-widest font-bold uppercase px-8 py-4 shrink-0">
+                Shop the drop
+              </Link>
+            </div>
+          </div>
+
+          {/* 5 Screens - Blockbuster Wall */}
+          <div className="flex lg:grid lg:grid-cols-5 gap-4 md:gap-6 overflow-x-auto snap-x snap-mandatory scroll-smooth lg:overflow-visible px-6 lg:px-0 -mx-6 lg:mx-0 py-2 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+            {[1, 2, 3, 4, 5].map((screen) => (
+              <div key={screen} className={`w-[80vw] sm:w-[55vw] lg:w-auto shrink-0 snap-center lg:shrink ${screen === 3 ? "lg:-translate-y-6" : ""}`}>
+                <TrackScreen screen={screen} poster={`/images/fege-track-${screen}.jpg`} />
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Brand Story Editorial Section */}
       <section className="py-32 bg-background border-b border-border/40 relative overflow-hidden z-10">
         {/* Subtle grid pattern background */}
@@ -259,6 +299,41 @@ export default function Home() {
               </div>
             </div>
 
+          </div>
+        </div>
+      </section>
+
+      {/* Cinema Full-Bleed Video */}
+      <section className="relative w-full h-[70vh] md:h-[90vh] overflow-hidden border-b border-white/5 z-10">
+        <video
+          src="/images/fege-track-video.mp4"
+          autoPlay
+          loop
+          muted
+          playsInline
+          preload="auto"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/30 to-black/80 z-10"></div>
+
+        <div className="absolute inset-0 z-20 flex flex-col items-center justify-center text-center px-6">
+          <span className="font-mono text-[10px] md:text-xs text-primary uppercase tracking-[0.3em] font-bold bg-black/60 border border-primary/30 px-4 py-2 rounded-full">
+            [ FEGE PICTURES PRESENTS ]
+          </span>
+          <h3 className="text-5xl md:text-8xl font-black font-syne uppercase text-white tracking-tighter leading-none mt-6">
+            The <span className="text-primary">Camo</span> Track
+          </h3>
+          <p className="text-muted text-sm md:text-base max-w-xl mt-6 leading-relaxed font-sans tracking-wide">
+            One fabric. One fit. Indigenous camo straight from the culture. Watch the drop film, then lock your fit.
+          </p>
+          <div className="flex flex-wrap items-center justify-center gap-4 mt-10">
+            <Link href="/collection" className="bg-primary hover:bg-primary-hover text-white px-8 py-4 text-sm font-bold uppercase tracking-widest inline-flex items-center gap-3 transition-all hover:-translate-y-1 shadow-lg shadow-primary/20">
+              Shop the drop
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+            </Link>
+            <span className="font-mono text-[10px] text-white/50 uppercase tracking-widest">
+              THE WALL OF SCREENS AWAITS ▲
+            </span>
           </div>
         </div>
       </section>
