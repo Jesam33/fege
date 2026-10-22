@@ -4,6 +4,12 @@ import Link from "next/link";
 import Image from "next/image";
 
 const ALL_PRODUCTS = [
+  { id: "n-track-pink", name: "FEGE Originals Track — Pink", price: 99, imageUrl: "/images/pink-track.png", category: "Tracksuits", href: "/collection" },
+  { id: "n-track-white", name: "FEGE Originals Track — White", price: 99, imageUrl: "/images/track-white.png", category: "Tracksuits", href: "/collection" },
+  { id: "n-sweat-jacket", name: "FEGE Sweat Jacket (Female)", price: 45, imageUrl: "/images/sweat-jacket.png", category: "Outerwear", href: "/collection" },
+  { id: "n-pamutation-tee", name: "Pamutation “No Light Today” Tee", price: 40, imageUrl: "/images/permutation.png", category: "Tops", href: "/collection" },
+  { id: "n-jesus-piece", name: "The Jesus Piece Tank", price: 60, imageUrl: "/images/jesus-tank.png", category: "Tops", href: "/collection" },
+  { id: "n-fege-shirt", name: "FEGE Originals Collar Shirt", price: 40, imageUrl: "/images/fege-shirt.png", category: "Tops", href: "/collection" },
   { id: "f1", name: "FEGE Premium Sweatshirt", price: 30, imageUrl: "/images/sweatshirt.png", category: "Tops", href: "/collection" },
   { id: "f2", name: "\u201cFEGE JUST DEY\u201d Tee", price: 45, imageUrl: "/images/round_neck.png", category: "Tops", href: "/collection" },
   { id: "f3", name: "PH Rhythm Windbreaker", price: 130, imageUrl: "", category: "Outerwear", href: "/collection" },
@@ -121,7 +127,7 @@ export default function SearchDropdown({ isOpen, onClose }: SearchDropdownProps)
                 <p className="font-sans font-bold text-white text-xs uppercase tracking-tight group-hover:text-primary transition-colors truncate">{product.name}</p>
                 <p className="font-mono text-[9px] text-muted uppercase tracking-widest">{product.category}</p>
               </div>
-              <span className="font-mono font-bold text-primary text-xs shrink-0">${product.price}</span>
+              <span className="font-mono font-bold text-primary text-xs shrink-0">₦{product.price}K</span>
             </Link>
           ))}
         </div>

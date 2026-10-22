@@ -7,6 +7,12 @@ export const metadata = {
 
 export default function CollectionPage() {
   const collectionProducts = [
+    { id: "n-track-pink", name: "FEGE Originals Track — Pink", price: 99, imageUrl: "/images/pink-track.png", imagePosition: "center top", isNew: true },
+    { id: "n-track-white", name: "FEGE Originals Track — White", price: 99, imageUrl: "/images/track-white.png", imagePosition: "center top", isNew: true },
+    { id: "n-sweat-jacket", name: "FEGE Sweat Jacket (Female)", price: 45, imageUrl: "/images/sweat-jacket.png", isNew: true },
+    { id: "n-pamutation-tee", name: "Pamutation “No Light Today” Tee", price: 40, imageUrl: "/images/permutation.png", imagePosition: "center top", isNew: true },
+    { id: "n-jesus-piece", name: "The Jesus Piece Tank", price: 60, imageUrl: "/images/jesus-tank.png", imagePosition: "left center", isNew: true },
+    { id: "n-fege-shirt", name: "FEGE Originals Collar Shirt", price: 40, imageUrl: "/images/fege-shirt.png", imagePosition: "left center", isNew: true },
     { id: "c12", name: "FEGE Indigenous Camo Track", price: 130, imageUrl: "/images/fege-track-1.jpg" },
     { id: "c1", name: "FEGE Premium Sweatshirt", price: 30, imageUrl: "/images/sweatshirt.png" },
     { id: "c2", name: "“FEGE JUST DEY” Tee", price: 45, imageUrl: "/images/round_neck.png" },

@@ -2,9 +2,11 @@ import Link from "next/link";
 import Image from "next/image";
 import ProductCard from "@/components/ProductCard";
 import TrackScreen from "@/components/TrackScreen";
+import NewDrop from "@/components/NewDrop";
 
 export default function Home() {
   const featuredProducts = [
+    { id: "n-fege-shirt", name: "FEGE Originals Collar Shirt", price: 40, imageUrl: "/images/fege-shirt.png", imagePosition: "left center", isNew: true },
     { id: "f8", name: "FEGE Indigenous Camo Track", price: 130, imageUrl: "/images/fege-track-1.jpg" },
     { id: "f1", name: "FEGE Premium Sweatshirt", price: 30, imageUrl: "/images/sweatshirt.png" },
     { id: "f2", name: "“FEGE JUST DEY” Tee", price: 45, imageUrl: "/images/round_neck.png" },
@@ -255,6 +257,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* New Listings — Track Colourways + New Pieces */}
+      <NewDrop />
 
       {/* Brand Story Editorial Section */}
       <section className="py-32 bg-background border-b border-border/40 relative overflow-hidden z-10">

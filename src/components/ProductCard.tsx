@@ -9,9 +9,11 @@ interface ProductCardProps {
   price: number;
   imageUrl: string;
   isSoldOut?: boolean;
+  isNew?: boolean;
+  imagePosition?: string;
 }
 
-export default function ProductCard({ id, name, price, imageUrl, isSoldOut = false }: ProductCardProps) {
+export default function ProductCard({ id, name, price, imageUrl, isSoldOut = false, isNew = false, imagePosition }: ProductCardProps) {
   const [quantity, setQuantity] = useState(1);
   const [added, setAdded] = useState(false);
   const { addToCart, setIsCartOpen } = useCart();
@@ -41,12 +43,21 @@ export default function ProductCard({ id, name, price, imageUrl, isSoldOut = fal
           </div>
         )}
 
+        {/* New Drop Tag */}
+        {isNew && !isSoldOut && (
+          <div className="absolute top-4 left-4 z-20 badge-shimmer bg-primary px-3 py-1 font-mono text-[9px] text-white tracking-[0.2em] font-bold uppercase rounded-full flex items-center gap-1.5 shadow-lg shadow-primary/40">
+            <span className="w-1.5 h-1.5 rounded-full bg-white animate-ping-slow inline-block"></span>
+            NEW DROP
+          </div>
+        )}
+
         {imageUrl ? (
-          <Image 
-            src={imageUrl} 
-            alt={name} 
-            fill 
+          <Image
+            src={imageUrl}
+            alt={name}
+            fill
             sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
+            style={imagePosition ? { objectPosition: imagePosition } : undefined}
             className="object-cover transition-transform duration-700 group-hover:scale-105"
           />
         ) : (
